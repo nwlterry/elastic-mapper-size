@@ -1,20 +1,21 @@
 # elastic-mapper-size
 
-Offline copy of the Elasticsearch **mapper-size** plugin for 8.18.4 (zip + signature + sha512).
+Offline Elasticsearch **mapper-size** plugin for 8.18.4 (zip + signature + sha512).
 
-## Files
+## Layout
 
-- `mapper-size-8.18.4.zip`
-- `mapper-size-8.18.4.zip.asc`
-- `mapper-size-8.18.4.zip.sha512`
-
-Install on a node (air-gapped):
-
-```bash
-sudo bin/elasticsearch-plugin install file:///path/to/mapper-size-8.18.4.zip
+```
+packages/mapper-size-8.18.4.zip
+packages/mapper-size-8.18.4.zip.asc
+packages/mapper-size-8.18.4.zip.sha512
+GROUP.md
+README.md
 ```
 
-Related copies:
+```bash
+sudo bin/elasticsearch-plugin install file:///path/to/packages/mapper-size-8.18.4.zip
+```
 
-- [elk_mapper-size](https://github.com/nwlterry/elk_mapper-size) (8.19.18 and 9.4.3 zips)
-- [elk_upgrade](https://github.com/nwlterry/elk_upgrade) (8.14.3 zip)
+---
+
+See [GROUP.md](GROUP.md) for sibling repositories. Catalog: https://github.com/nwlterry/nwlterry
